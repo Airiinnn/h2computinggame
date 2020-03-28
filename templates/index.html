@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+        <link rel="stylesheet" text=text/css href="static/styles/style.css">
+        <title>A-Level Computing Trilogy: The Game</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="/">
+                <h1 class="headerhead">A-LEVEL COMPUTING TRILOGY: THE GAME</h1>
+            </a>
+            <div style="float:right;">
+                <a href="/profile" style="text-decoration:none;">
+                    <h1 class="box">
+                        {{ username }}<br>
+                        {{ user_score }}
+                    </h1>
+                </a>
+                <a href="/logout" class="logout">Log out</a>
+            </div>
+        </div>
+
+        <div class="about">
+            <h1 style="font-size:48px">About</h1>
+            <h1 class="aboutbody">THE GAME is one of three installments in the A-LEVEL COMPUTING TRILOGY. Learn computing concepts in a fun and interactive way through the different world below!</h1>
+        </div>
+
+        <div class="board">
+            <h1 style="font-size:48px">Leaderboards</h1>
+            <h1 style="font-size:32px">
+                {{ first[0] }} {{ first[1] }}<br>
+                {{ second[0] }} {{ second[1] }}<br>
+                {{ third[0] }} {{ third[1] }}<br>
+                {{ username }} {{ user_score }}
+            </h1>
+
+            <a href="/leaderboard" class="button">Show All</a>
+        </div>
+        
+        <div class="worlds">
+            <h1 style="font-size:48px;text-align:center">Worlds</h1>
+            <a href="/bingo" class="world">
+                <span class="dot"></span>
+                <h1>World 1</h1>
+            </a>
+
+            <a href="/start" class="world">
+                <span class="dot"></span>
+                <h1>World 2</h1>
+            </a>
+
+            <a href="/world3" class="world">
+                <span class="dot"></span>
+                <h1>World 3</h1>
+            </a>
+
+            <a href="/world4" class="world">
+                <span class="dot"></span>
+                <h1>World 4</h1>
+            </a>
+        </div>
+
+    </body>
+</html>

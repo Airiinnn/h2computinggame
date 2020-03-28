@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+        <link rel="stylesheet" text=text/css href="static/styles/profile.css">
+        <title>A-Level Computing Trilogy: The Game</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="/">
+                <h1 class="headerhead">A-LEVEL COMPUTING TRILOGY: THE GAME</h1>
+            </a>
+            <div style="float:right;">
+                <a href="/profile" style="text-decoration:none;">
+                    <h1 class="box">
+                        {{ username }}<br>
+                        {{ user_score }}
+                    </h1>
+                </a>
+                <a href="/logout" class="logout">Log out</a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <h1 style="font-size:48px;">My Profile</h1>
+            <img src="{{ current_user.profile_pic }}"></img>
+            <h1 style="font-size:32px;">
+                Name: {{ current_user.name }}<br>
+                Email: {{ current_user.email }}<br>
+                Username: {{ current_user.username }}
+            </h1> 
+        </div>
+    </body>
+</html>

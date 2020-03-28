@@ -1,0 +1,110 @@
+body {
+    background-color: orange;
+    color: white;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Exo 2';
+}
+
+.header {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.headerhead {
+    font-size: 60px;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+
+.box {
+    margin-top: 10px;
+    font-size: 24px;
+    border: 3px solid white;
+    padding: 10px 32px;
+    border-radius: 30px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: white;
+}
+
+.box:hover {
+    background-color: white;
+    color: orange;
+}
+
+.logout {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding-left: 40px;
+}
+
+.play {
+    clear: both;
+    width: 100%;
+}
+
+.b {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: 2%;
+    width: 16%;
+    height: 80px;
+    background-color: white;
+    color: orange;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+.b1 {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: 2%;
+    width: 16%;
+    height: 80px;
+    background-color: red;
+    color: orange;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+}
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.flex {
+	clear:both;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item+.flex-item {
+    margin-left: 10px;
+}
+
+.button {
+    margin-top: 15px;
+    background-color: #0066FF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}

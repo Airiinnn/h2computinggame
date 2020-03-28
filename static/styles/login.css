@@ -1,0 +1,22 @@
+body {
+    background-color: orange;
+    color: white;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Exo 2';
+    text-align:center;
+}
+
+.button {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    height: 220px;
+    width: 220px;
+}

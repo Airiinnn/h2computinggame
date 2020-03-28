@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+		<link rel="stylesheet" text=text/css href="static/styles/adventure.css">
+		<script type="text/javascript" src="/static/scripts/adventure.js"></script>
+        <title>A-Level Computing Trilogy: The Game</title>
+	</head>
+	
+	<body>
+		<div class="header">
+            <a href="/">
+                <h1 class="headerhead">A-LEVEL COMPUTING TRILOGY: THE GAME</h1>
+            </a>
+            <div style="float:right;">
+                <a href="/profile" style="text-decoration:none;">
+                    <h1 class="box">
+                        {{ username }}<br>
+                        {{ user_score }}
+                    </h1>
+                </a>
+                <a href="/logout" class="logout">Log out</a>
+            </div>
+        </div>
+		
+		<div class="play">
+			{% for i in range(0, 25) %}
+				<h1 class="b" id="{{ i }}">{{ i }}</h1>
+			{% endfor %}
+		</div>
+
+		<div class="flex">
+			<div class="flex-item">
+				<button onclick="Game()" class="button">Game Start</button>
+			</div>
+
+			<div class="flex-item">
+				<button onclick="next()" class="button">Roll Dice</button>
+			</div>
+		</div>
+
+	</body>
+
+</html>
